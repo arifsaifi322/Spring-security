@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		
+		<h1>Login Page</h1>
+		<form action="/login" method="post">
+			Email : <input type="text" name="username"><br>
+			Password : <input type="text" name="password"><br>
+			<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+			
+			<button>Login</button>
+		</form>
+	
+</body>
+</html>
